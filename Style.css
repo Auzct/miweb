@@ -1,0 +1,119 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(204, 206, 191);
+    border: 2px solid black;
+    
+}
+
+header{
+    background-color: rgba(0,0,0,0.9);
+    color: orangered;
+    padding: 3rem 2rem;
+    border: 2px solid orangered;
+    
+}
+
+header h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    
+}
+
+.container {
+    width: 350px;
+    margin: 0 auto;
+}
+
+section article {
+    transition: box-shadow 0.3s ease;
+    background-color: rgba(0,0,0,0.9);
+    margin: 1rem 0;
+    border-radius: 0,5;
+    padding: 0.5rem 0.1rem;
+    border: solid 2px orangered;
+    overflow: hidden;
+    cursor: pointer;
+    
+
+}
+
+section article p  {
+color: white;
+text-align: center;
+}
+section article ul {
+
+    text-align: center;
+    color: orangered;
+}
+
+section article h2 {
+    text-align: center;
+    color: white;
+}
+section article:hover {
+
+    box-shadow: 0.2rem 0.3rem 0.4rem rgba(189, 87, 29, 0.993)
+}
+
+.post1 {
+    position: relative;
+    right: 405px;
+
+}
+.post2 {
+    position: relative;
+    bottom: 534.5px;
+    
+}
+
+.post3 {
+    position: relative;
+    left: 405px;
+    bottom: 1066.5px;
+
+}
+
+.post4 {
+    position: relative;
+    right: 405px;
+    bottom:1050px;
+}
+
+.post5 {
+    position: relative;
+    bottom:1603.5px ;
+}
+
+footer {
+
+    background-color: rgba(0,0,0,0.9);
+    text-align: left;
+    padding: 3rem;
+
+}
+
+footer p {
+    color: white;
+    margin: 0;
+
+}
+
+footer section {
+    
+    float:right;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+
+}
+footer a:hover {
+    color: yellow;
+}
