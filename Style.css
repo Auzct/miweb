@@ -1,119 +1,162 @@
 html {
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
 }
 
 body {
     margin: 0px;
     background-color: rgb(204, 206, 191);
-    border: 2px solid black;
-    
+    border: 2px solid black;  
+    padding: 0px 10px;
 }
 
-header{
-    background-color: rgba(0,0,0,0.9);
-    color: orangered;
-    padding: 3rem 2rem;
+button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 15px;
     border: 2px solid orangered;
-    
-}
-
-header h1 {
-    font-size: 3.5rem;
-    text-align: center;
-    
-}
-
-.container {
-    width: 350px;
-    margin: 0 auto;
-}
-
-section article {
-    transition: box-shadow 0.3s ease;
-    background-color: rgba(0,0,0,0.9);
-    margin: 1rem 0;
-    border-radius: 0,5;
-    padding: 0.5rem 0.1rem;
-    border: solid 2px orangered;
-    overflow: hidden;
-    cursor: pointer;
-    
-
-}
-
-section article p  {
-color: white;
-text-align: center;
-}
-section article ul {
-
-    text-align: center;
-    color: orangered;
-}
-
-section article h2 {
-    text-align: center;
+    box-shadow: 2px 2px 5px orangered;
+    background-color: orangered;
     color: white;
 }
-section article:hover {
-
-    box-shadow: 0.2rem 0.3rem 0.4rem rgba(189, 87, 29, 0.993)
+button:hover {
+    background-color: rgb(241, 153, 70);
+    transition: 0.4s;
 }
-
-.post1 {
-    position: relative;
-    right: 405px;
-
-}
-.post2 {
-    position: relative;
-    bottom: 654.5px;
+.container {
+    max-width: 1400px;
+    margin: auto;
     
 }
-
-.post3 {
-    position: relative;
-    left: 405px;
-    bottom: 1309.5px;
-
+header {
+    background-color: rgba(0,0,0,0.9);
+    color: orangered;
+    border: 2px solid orangered;
+    margin: 0px;
+    padding: 10px;
+    display: flex;
 }
-
-.post4 {
-    position: relative;
-    right: 405px;
-    bottom:1050px;
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.post5 {
-    position: relative;
-    bottom:1603.5px ;
+ header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+header a{
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+header .logo {
+    margin: 0;
+    font-weight: bold;
+    color: orangered;
+    font-size: 2em;
+}
+header a:hover{
+    color: orangered;
+}
+header h1 {
+    font-size: 3.5rem;
+    text-align: center; 
+}
+#post .container {
+    margin: 4px;
+    padding: 2px;
+    width: 320px;
+    height: 690px;
+    border: solid 2px orangered;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.8);
+    overflow: hidden;
+    align-self: center;
+    text-align: center;
+    display: inline-block;
+}
+#post .container:hover {
+    box-shadow: 4px 4px 10px;
+    color: orangered;
+    cursor: pointer;
+    background-color: rgba(230, 151, 62, 0.877);
+}
+#post h2  {
+    font-size: 1.3em;
+    color: white;
+    text-align: center;
+}
+#post p {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+#post ul {
+    text-align: center;
+    color:orangered;
+    font-weight: bold;
+    list-style: none;
+    padding-left: 1px;
 }
 
 footer {
-
     background-color: rgba(0,0,0,0.9);
-    text-align: left;
-    padding: 3rem;
-
+    padding: 20px;
 }
-
+footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 footer p {
     color: white;
     margin: 0;
-
+    padding: 10px;
 }
-
-footer section {
-    
-    float:right;
-}
-
 footer a {
     transition: color 0.3s ease;
     color: white;
     text-decoration: none;
-
 }
 footer a:hover {
     color: yellow;
 }
+
+@media (min-width: 720px) {
+header {
+    position: fixed;
+    width: 100%;
+    margin: 0%;
+    padding: 5px;
+}
+header .container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+header nav {
+    flex-direction: row;
+    padding: 8px 7px;
+    align-items: right;
+}
+header .logo {
+    text-align: left;
+    align-items: left;
+}
+
+#post {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: auto;
+}
+
+} 

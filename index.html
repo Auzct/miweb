@@ -8,20 +8,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!--Reglas: no se puede poner un header dentro de otro header y no se puede poner un header
     dentro de un footer-->
 
     <header>
-        <h1 id="titulo">Pizzeria Al Horno</h1>
-
+        <div class="container">
+            <p class="logo">AlHorno</p>
+            <nav>
+                <a href="#">Sobre Nosotros</a>
+                <a href="#">Nuestras Pizzas y precios</a>
+            </nav>
+        </div>
     </header>
-    <section class="container">
-        <article class="post1">
+    <br><br><br><br>
+    <section id="post">
+        
+        <article class="container">
             <h2>Margarita</h2>
-            <p>Pequeña 2$ | Mediana 4$</p>
-            <img src="img/Margarita.jpeg" width="350" height="350" ;>
+            <p>Pequeña 2$ / Mediana 4$</p>
+            <img src="img/Margarita.jpeg" width="350px" height="350px">
             <p>Esta pizza tan rica contiene los siguientes ingredientes
                 <ul>
                     <li>Salsa</li>
@@ -29,14 +37,14 @@
                     <li>Jamón</li>
                     <li>Oregano</li>
                 </ul>
+                <button>Ordenar</button>
             </p>
         </article>
-        
-        
-        <article class="post2">
+        <br>
+        <article class="container">
             <h2>Hawaiana y/o Bocadillo</h2>
-            <p>Pequeña 2.5$ | Mediana 5$</p>
-            <img src="img/Hawaiana.jpeg" width="350" height="350">
+            <p>Pequeña 2.5$ / Mediana 5$</p>
+            <img src="img/Hawaiana.jpeg" width="350px" height="350px">
             <p>Esta pizza tan rica contiene los siguientes ingredientes
                 <ul>
                     <li>Salsa</li>
@@ -44,14 +52,14 @@
                     <li>Jamón</li>
                     <li>Piña y/o Bocadillo</li>
                 </ul>
+                <button>Ordenar</button>
             </p>
             
         </article> 
-        
-        <article class="post3">
+        <article class="container">
             <h2>Italiana</h2>
-            <p>Pequeña 2.75$ | Mediana 5.5$</p>
-            <img src="img/Italiana.jpeg" width="350" height="310">
+            <p>Pequeña 2.75$ / Mediana 5.5$</p>
+            <img src="img/Italiana.jpeg" width="350px" height="350px">
             <p>Esta pizza tan rica contiene los siguientes ingredientes
                 <ul>
                     <li>Salsa</li>
@@ -61,46 +69,86 @@
                     <li>Parmesano</li>
                     <li>Oregano</li>
                 </ul>
+                <button>Ordenar</button>
             </p>
             
         </article> 
-
-        <article class="post4">
+                <br>
+        <article class="container">
             <h2>Pizza 4</h2>
             <p>Descripcion de las pizza 4</p>
-            <img src="img/pizza4.webp" width="400";>
+            <img src="img/pizza4.webp" width="300px" height="300px">
             <p>Esta pizza tan rica contiene los siguientes ingredientes
                 <ul>
                     <li>ingrediente 1</li>
                     <li>ingrediente 2</li>
                     <li>ingrediente 3</li>
                 </ul>
+                <button>Ordenar</button>
             </p>
         </article>
-
-        <article class="post5">
+            <br>
+        <article class="container">
             <h2>Pizza 5</h2>
             <p>Descripcion de las pizza 5</p>
-            <img src="img/pizza5.jpg" width="400" height="267">
+            <img src="img/pizza5.jpg" width="300px" height="300px">
             <p>Esta pizza tan rica contiene los siguientes ingredientes
                 <ul>
                     <li>ingrediente 1</li>
                     <li>ingrediente 2</li>
                     <li>ingrediente 3</li>
                 </ul>
+                <button>Ordenar</button>
             </p>
         </article>
-
-    </section>
-    <hr>
-    <footer>
-        <section>
-            <a href="#titulo">Ir al comienzo</a>
-        <p>Para contactarme: <a href="mailto:auzcategui10@hotmail.com">Haz click aquí</a> </p>
-        </section>
+        <article class="container">
+            <h2>Pizza 6</h2>
+            <p>Descripcion de las pizza 6</p>
+            <img src="img/pizza5.jpg" width="300px" height="300px">
+            <p>Esta pizza tan rica contiene los siguientes ingredientes
+                <ul>
+                    <li>ingrediente 1</li>
+                    <li>ingrediente 2</li>
+                    <li>ingrediente 3</li>
+                </ul>
+                <button>Ordenar</button>
+            </p>
+        </article>
+        <article class="container">
+            <h2>Pizza 6</h2>
+            <p>Descripcion de las pizza 6</p>
+            <img src="img/pizza5.jpg" width="300px" height="300px">
+            <p>Esta pizza tan rica contiene los siguientes ingredientes
+                <ul>
+                    <li>ingrediente 1</li>
+                    <li>ingrediente 2</li>
+                    <li>ingrediente 3</li>
+                </ul>
+                <button>Ordenar</button>
+            </p>
+        </article>
+        <article class="container">
+            <h2>Pizza 6</h2>
+            <p>Descripcion de las pizza 6</p>
+            <img src="img/pizza5.jpg" width="300px" height="300px">
+            <p>Esta pizza tan rica contiene los siguientes ingredientes
+                <ul>
+                    <li>ingrediente 1</li>
+                    <li>ingrediente 2</li>
+                    <li>ingrediente 3</li>
+                </ul>
+                <button>Ordenar</button>
+            </p>
+        </article>
         
-        <p>Copyright 2023</p>
+    </section>
+    <footer>
+        <section class="container">
+            <p>  <a href="#post"> Ir al comienzo </a>     </p>
+        <p>  Para contactarme: <a href="mailto:auzcategui10@hotmail.com">Haz click aquí</a> </p>
+        
+        <p>&copy; Auzct 2023</p>
     </footer>
-
+</section>
 </body>
 </html>
