@@ -78,6 +78,11 @@ button:hover {
     background-size: cover;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
 }
+.container img:hover {
+    zoom: 105%;
+    overflow: hidden;
+    align-items: center;
+}
 .container2 img {
     width: 308px;
     height: 200px;
@@ -192,11 +197,13 @@ header a:hover{
     box-shadow: 2px 2px 10px orange;
     background-color: rgba(247, 200, 147, 0.9);
     transition: 0.5s;
+    zoom: 110%;
 }
 #post .container2:hover {
     box-shadow: 5px 5px 16px orange;
     background-color: rgba(247, 200, 147, 0.9);
     transition: 0.5s;
+    zoom: 110%;
 }
 #post h2  {
     font-size: 1.3em;
