@@ -342,6 +342,9 @@ footer a:hover {
     text-align: center;
     transition: .6s ease;
 }
+#nosotros h3:hover {
+    transform: scale(1.2);
+}
 #nosotros p {
     font-size: 1.4rem;
     font-weight: bold;
@@ -361,9 +364,14 @@ footer a:hover {
     text-align: center;
     transition: .6s ease;
 }
+#nosotros .a1 {
+    font-size: 1.5rem;
+    margin: 10px;
+}
 #nosotros a:hover{
     transition: .5s ease;
     color: orangered;
+    transform: scale(1.2);
 }
 #nosotros .descrip {
     font-size: 1.2rem;
@@ -374,6 +382,10 @@ footer a:hover {
     color: orangered;
     font-size: 1.5rem;
     font-weight: bold;
+}
+.containeri{
+    display: flex;
+    flex-direction: column;
 }
 @media (min-width: 720px) {
 header {
