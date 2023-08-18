@@ -123,6 +123,15 @@ button:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
     transition: .9s ease;
 }
+.container3 img {
+    width: 300px;
+    height: 240px;
+    border-radius: 10px;
+    padding: 1px;
+    background-size: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    transition: .9s ease;
+}
 header {
     background-image: linear-gradient(
         10000000000000000000000deg,
@@ -178,29 +187,23 @@ header a:hover{
 #post {
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.25),
-        rgba(0, 0, 0, 0.25)
-        ) ,url(img/wall2.jpg) ;
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+        ) ,url(img/pizzas.jfif);    
     background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position: center; */
+    background-size: 100% 100%;
+    object-fit: cover;
     border-radius: 50px;
-    /* border: solid 2px orange; */
-    margin: 50px;
-    width: 99.5%;
+    
+    margin: 50px auto;
+    width: 95%;
     transition: 0.7s ease;
     box-shadow: 5px 5px 10px black;
-}
-#post:hover{
-    /* box-shadow: 4px 4px 15px orangered;
-    background-color: rgba(216, 216, 96, 0.356); */
-    transition: 0.7s;
 }
 #post .container {
     margin: 8px;
     width: 328px;
-    height: 475px;
-    /* border: solid 1px orange; */
+    height: 530px;
     border-radius: 1px;
     background-color: rgba(0,0,0,0.79);
     box-shadow: 4px 4px 10px rgb(0, 0, 0);
@@ -213,10 +216,22 @@ header a:hover{
 #post .container2 {
     margin: 8px;
     width: 320px;
-    height: 475px;
-    /* border: solid 1px orange; */
-    border-radius: 20px;
-    background-color: rgba(0,0,0,0.5);
+    height: 530px;
+    border-radius: 1px;
+    background-color: rgba(0,0,0,0.79);
+    box-shadow: 4px 4px 10px rgb(0, 0, 0);
+    overflow: hidden;
+    align-self: center;
+    text-align: center;
+    display: inline-block;
+    transition: 1.5s ease;
+}
+#post .container3 {
+    margin: 8px;
+    width: 328px;
+    height: 420px;
+    border-radius: 1px;
+    background-color: rgba(0,0,0,0.79);
     box-shadow: 4px 4px 10px rgb(0, 0, 0);
     overflow: hidden;
     align-self: center;
@@ -225,23 +240,34 @@ header a:hover{
     transition: 1.5s ease;
 }
 #post .container:hover {
-    color: red;
     box-shadow: 2px 2px 10px orange;
     background-color: rgba(242, 248, 150, 0.7);
     transition: 1.5s ease;
     width: 350px;
-    height: 510px;
+    height: 545px;
 }
 #post .container2:hover {
     box-shadow: 5px 5px 16px orange;
     background-color: rgba(242, 248, 150, 0.7);
     transition: 1.5s ease;
     width: 350px;
-    height: 510px;
+    height: 545px;
+}
+#post .container3:hover {
+    box-shadow: 2px 2px 10px orange;
+    background-color: rgba(242, 248, 150, 0.7);
+    transition: 1.5s ease;
+    width: 340px;
+    height: 435px;
 }
 #post .container2 img:hover{
     width: 340px;
     height: 240px;
+    transition: .9s ease;
+}
+#post .container3 img:hover{
+    width: 320px;
+    height: 250px;
     transition: .9s ease;
 }
 #post h2  {
@@ -250,7 +276,7 @@ header a:hover{
     text-align: center;
 }
 #post p {
-    font-size: 14px;
+    font-size: 18px;
     color: white;
     text-align: center;
     font-weight: bold;
@@ -269,8 +295,24 @@ header a:hover{
 
     text-align: center;
     color: orangered;
-    padding-bottom: 100000px;
+    padding-bottom: 25px;
     margin: 0;
+}
+#post div a {
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    transition: .6s ease;
+    border: solid 1px white;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 5px 10px;
+}
+#post div a:hover {
+    transition: .5s ease;
+    color: orangered;
 }
 .galeria {
     margin: 0 auto;
@@ -417,5 +459,12 @@ header .logo {
     justify-content: center;
     padding: 10px 20px;
     margin: auto;
+}
+#post p {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px 10px;
 }
 } 
