@@ -54,7 +54,6 @@ body {
     border-radius: 30px;
 }
 #titulo h1{
-    padding-right: 50px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -193,7 +192,7 @@ header a:hover{
 #post .container {
     margin: 8px auto;
     width: 420px;
-    height: 680px;
+    height: 700px;
     border-radius: 1px;
     background-color: rgba(0,0,0,0.59);
     box-shadow: 4px 4px 10px rgb(0, 0, 0);
@@ -207,7 +206,7 @@ header a:hover{
 #post .container2 {
     margin: 8px auto;
     width: 420px;
-    height: 670px;
+    height: 700px;
     border-radius: 1px;
     background-color: rgba(0,0,0,0.59);
     box-shadow: 4px 4px 10px rgb(0, 0, 0);
@@ -267,7 +266,7 @@ header a:hover{
     text-align: center;
 }
 #post p {
-    font-size: 20px;
+    font-size: 19px;
     color: white;
     text-align: center;
     font-weight: bold;
