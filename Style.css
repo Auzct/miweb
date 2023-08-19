@@ -189,36 +189,37 @@ header a:hover{
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)
         ) ,url(img/pizzas.jfif);    
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-repeat: repeat;
+    background-position: center center;
     object-fit: cover;
     border-radius: 20px;
-    
-    margin: auto;
+    margin: 0 auto;
+    padding-left: 50px;
     width: 100%;
     height: 100%;
     transition: 0.7s ease;
     box-shadow: 5px 5px 10px black;
 }
 #post .container {
-    margin: 8px;
+    margin: 8px auto;
     width: 420px;
     height: 650px;
     border-radius: 1px;
-    background-color: rgba(0,0,0,0.79);
+    background-color: rgba(0,0,0,0.59);
     box-shadow: 4px 4px 10px rgb(0, 0, 0);
     overflow: hidden;
+    display: inline-block;
     align-self: center;
     text-align: center;
-    display: inline-block;
+    justify-content: center;
     transition: 1.5s ease;
 }
 #post .container2 {
-    margin: 8px;
+    margin: 8px auto;
     width: 420px;
     height: 650px;
     border-radius: 1px;
-    background-color: rgba(0,0,0,0.79);
+    background-color: rgba(0,0,0,0.59);
     box-shadow: 4px 4px 10px rgb(0, 0, 0);
     overflow: hidden;
     align-self: center;
@@ -227,7 +228,7 @@ header a:hover{
     transition: 1.5s ease;
 }
 #post .container3 {
-    margin: 8px;
+    margin: 8px auto;
     width: 410px;
     height: 535px;
     border-radius: 1px;
@@ -431,7 +432,7 @@ footer a:hover {
     display: flex;
     flex-direction: column;
 }
-@media (min-width: 720px) {
+@media (min-width: 900px) {
 header {
     position: fixed;
     width: 100%;
