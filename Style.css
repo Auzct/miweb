@@ -432,7 +432,7 @@ footer a:hover {
     display: flex;
     flex-direction: column;
 }
-@media (min-width: 719px) {
+@media (min-width: 600px) {
 header {
     position: fixed;
     width: 100%;
@@ -458,6 +458,14 @@ header .logo {
 }
 
 #post {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+        ) ,url(img/pizzas.jfif);    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
