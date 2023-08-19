@@ -12,7 +12,7 @@ body {
         rgba(250, 200, 167, 0.219),
         rgba(250, 135, 69, 0.3)
         );
-    margin: 0;
+    margin: 0 auto;
 }
 .container{
     max-width: 1400px;
@@ -20,8 +20,7 @@ body {
 }
 #titulo {
     margin: 15px auto;
-    width: 90%;
-    height: 0%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -32,23 +31,22 @@ body {
         rgba(160, 159, 159, 0.2) 
         ), url(img/titulo.jfif);
     background-position: center;
-    transition: 0.7 ease;
+    transition: 0.7s ease;
     border-radius: 5px;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.9);
-    transition: 0.7s ease;
 }
 #titulo .img1 {
     margin: 2px;
-    width: 150px;
-    height: 130px;
+    width: 120px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     border-radius: 30px;
 }
 #titulo .img2{
     margin: 3px;
-    width: 150px;
-    height: 130px;
+    width: 120px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     border-radius: 30px;
@@ -61,7 +59,7 @@ body {
 }
 #titulo:hover {
     box-shadow: 2px 2px 7px orange;
-    
+    transition: 0.9s ease;
     color: orange;
     opacity: 0.7;
 }
@@ -126,6 +124,7 @@ header {
         rgba(0, 1, 0, 0.4),
         rgba(88, 87, 87, 0.5)
         ) ,url(img/Wall.jfif);
+        height: 50vh;
         background-position: center;
         justify-self: center;
         object-fit: cover;
@@ -140,7 +139,6 @@ header:hover {
     box-shadow: 2px 2px 10px orange;
     background-color: rgba(216, 216, 96, 0.356);
     transition: 0.7s ease;
-    opacity: 1;
 }
 header .container {
     display: flex;
@@ -155,15 +153,14 @@ header .container {
 }
 header a{
     padding-bottom: 20px;
-    padding-right: 20px;
-    margin: 5px;
+    margin: 5px auto;
     text-decoration: none;
     font-weight: bold;
     color: white;
     text-align: center;
 }
 header .logo {
-    margin: 0;
+    margin: 0 auto;
     font-weight: bold;
     color: orangered;
     font-size: 2.25em;
@@ -183,16 +180,16 @@ header a:hover{
     background-position: center center;
     object-fit: cover;
     border-radius: 20px;
-    margin: auto; 
-    padding-left: 22px;
+    margin: 5px auto; 
     width: 100%;
+    max-width: 1400px;
     height: 100%;
     transition: 0.7s ease;
     box-shadow: 5px 5px 10px black;
 }
 #post .container {
-    margin: 8px auto;
     width: 415px;
+    margin: 15px 10px;
     height: 690px;
     border-radius: 1px;
     background-color: rgba(0,0,0,0.59);
@@ -205,7 +202,7 @@ header a:hover{
     transition: 1.5s ease;
 }
 #post .container2 {
-    margin: 8px auto;
+    margin: 15px 10px;
     width: 415px;
     height: 690px;
     border-radius: 1px;
@@ -218,7 +215,7 @@ header a:hover{
     transition: 1.5s ease;
 }
 #post .container3 {
-    margin: 8px auto;
+    margin: 15px 10px;
     width: 410px;
     height: 550px;
     border-radius: 1px;
@@ -351,7 +348,7 @@ footer a:hover {
 #nosotros {
     margin: 20px auto;
     padding: 10px 20px;
-    height: 650px;
+    height: 700px;
     width: 100%;
     display: flex;
     flex-direction: column;
