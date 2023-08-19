@@ -262,7 +262,7 @@ header a:hover{
     transition: .9s ease;
 }
 #post h2  {
-    font-size: 1.3em;
+    font-size: 1.8rem;
     color: white;
     text-align: center;
 }
@@ -464,6 +464,11 @@ header .logo {
     margin: auto;
     width: 95%;
     border-radius: 50px;
+}
+#post h2  {
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
 }
 #post .container {
     margin: 8px;
