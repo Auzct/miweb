@@ -120,10 +120,10 @@ button:hover {
 }
 header {
     background-image: linear-gradient(
-        10000000000000000000000deg,
-        rgba(0, 1, 0, 0.4),
-        rgba(88, 87, 87, 0.5)
-        ) ,url(img/Wall.jfif);
+        100deg,
+        rgba(238, 238, 238, 0.1),
+        rgba(22, 22, 22, 0.6)
+        ) ,url(img/Wall1.jfif);
         height: 50vh;
         background-position: center;
         justify-self: center;
@@ -166,6 +166,12 @@ header .logo {
     font-size: 2.25em;
     padding-bottom: 20px;
     padding-left: 15px;
+    transition: .7s ease;
+}
+header .logo:hover{
+    transform: scale(1.3);
+    transition: .7s ease;
+    text-shadow: 3px 3px 11px orange;
 }
 header a:hover{
     color: orangered;
@@ -287,6 +293,9 @@ header a:hover{
     padding-bottom: 25px;
     margin: 0;
 }
+#post div {
+    transition: .7s ease;
+}
 #post div a {
     font-size: 1.25rem;
     text-decoration: none;
@@ -299,9 +308,18 @@ header a:hover{
     margin: 10px auto;
     padding: 5px 10px;
 }
-#post div a:hover {
-    transition: .5s ease;
+#post div:hover {
+    text-shadow: 2px 2px 10px orange;;
+    transition: .7s ease;
     color: orangered;
+    transform: scale(1.2);
+}
+#post .a1 i {
+    transition: .7s ease;
+}
+#post .a1 i:hover {
+    transform: scale(1.5);
+    transition: .7s ease;
 }
 .galeria {
     margin: 0 auto;
@@ -375,7 +393,7 @@ footer a:hover {
     transition: .6s ease;
 }
 #nosotros h3:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 #nosotros p {
     font-size: 1.4rem;
@@ -399,7 +417,7 @@ footer a:hover {
 #nosotros a:hover{
     transition: .5s ease;
     color: orangered;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 #nosotros .descrip {
     font-size: 1.2rem;
@@ -422,9 +440,9 @@ html {
 header {
     position: fixed;
     width: 100%;
-    height: 55px;
+    height: 10vh;
     margin: 0%;
-    padding: 5px;
+    padding: 5px 0px
 }
 body{
     margin: 0px;
@@ -434,17 +452,27 @@ header .container {
     justify-content: space-between;
     width: 100%;
 }
+header .logo{
+    margin: 5px;
+}
 header nav {
     flex-direction: row;
     padding: 8px 7px;
     align-items: right;
+}
+header nav a {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 header .logo {
     text-align: left;
     align-items: left;
     justify-content: left;
 }
-
+#titulo {
+    width: 80vw;
+}
 #post {
     background-image: linear-gradient(
         0deg,
