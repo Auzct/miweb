@@ -91,10 +91,7 @@ button:hover {
     transition: 0.7s;
     cursor: pointer;
 }
-.container {
-    max-width: 1400px;
-    margin: auto; 
-}
+
 .container img {
     width: 400px;
     height: 310px;
@@ -193,7 +190,8 @@ header a:hover{
     background-position: center center;
     object-fit: cover;
     border-radius: 20px;
-    margin: 0 auto;
+    max-width: 1400px;
+    margin: auto; 
     padding-left: 50px;
     width: 100%;
     height: 100%;
@@ -397,10 +395,6 @@ footer a:hover {
     text-align: center;
     transition: .6s ease;
 }
-/* #nosotros p:hover{
-    transition: .5s ease;
-    color: orangered;
-} */
 #nosotros a {
     font-size: 1.3rem;
     text-decoration: none;
@@ -432,7 +426,7 @@ footer a:hover {
     display: flex;
     flex-direction: column;
 }
-@media (min-width: 500px) {
+@media (min-width: 720px) {
 header {
     position: fixed;
     width: 100%;
@@ -545,7 +539,6 @@ header .logo {
     width: 320px;
     height: 270px;
     border-radius: 10px;
-    /* border: solid 1px orange; */
     padding: 1px;
     background-size: cover;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
